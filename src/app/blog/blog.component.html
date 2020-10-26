@@ -1,7 +1,26 @@
-<h3>ScullyIo content</h3>
-<hr>
+<article>
+  <header *ngIf="currentPost$ | async as currentPost" class="pt-6 xl:pb-10">
+    <div class="space-y-1 text-center">
+      <dl class="space-y-10" *ngIf="currentPost.publishedAt">
+        <div>
+          <dt class="sr-only">Published on</dt>
+          <dd class="text-base leading-6 font-medium text-gray-500">
+            <time [dateTime]="currentPost.publishedAt">
+              {{ currentPost.publishedAt | date: "dd MMMM yyyy" }}
+            </time>
+          </dd>
+        </div>
+      </dl>
+      <div>
+        <h1
+          class="text-3xl leading-9 font-extrabold text-gray-900 tracking-tight sm:text-4xl sm:leading-10 md:text-5xl md:leading-14"
+        >
+          {{ currentPost.title }}
+        </h1>
+      </div>
+    </div>
+  </header>
 
-<!-- This is where Scully will inject the static HTML -->
-<scully-content></scully-content>
-<hr>
-<h4>End of content</h4>
+  <!-- This is where Scully will inject the static HTML -->
+  <scully-content></scully-content>
+</article>
