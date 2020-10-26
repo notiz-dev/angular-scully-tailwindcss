@@ -17,3 +17,11 @@ npm run scully:serve
 ```
 
 Open your favorite browser and go to [localhost:1668/](http://localhost:1668/) for the Scully static server and [localhost:1864/](http://localhost:1864/) for the Angular server.
+
+## New Blog post
+
+[Creating](https://scully.io/docs/learn/create-a-blog/generate-new-blog-posts/) new blog post for Scully:
+
+```bash
+ng generate @scullyio/init:post --name="Cool post"
+```
