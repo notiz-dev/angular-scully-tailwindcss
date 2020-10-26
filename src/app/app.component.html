@@ -1,9 +1,25 @@
-<div
-  class="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12"
->
+<div class="max-w-3xl mx-auto px-4 sm:px-6 xl:max-w-5xl xl:px-0">
+  <header class="flex justify-between items-center py-10">
+    <div>
+      <a routerLink="/" class="text-xl font-semibold">
+        Angular + Scully + Tailwind = 🚀
+      </a>
+    </div>
+    <div class="">
+      <a
+        href="https://github.com/notiz-dev/angular-scully-tailwindcss"
+        class="font-medium text-gray-500 hover:text-gray-700"
+      >
+        Source Code &rarr;
+      </a>
+    </div>
+  </header>
+
+  <router-outlet></router-outlet>
+</div>
+
+<!-- <div class="bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
   <div class="mx-auto p-20 rounded-lg shadow-lg bg-white">
     <p class="text-4xl font-semibold">Angular + Scully + Tailwind = 🚀</p>
   </div>
-</div>
-
-<router-outlet></router-outlet>
+</div> -->
