@@ -15,7 +15,14 @@ export class BlogsComponent implements OnInit {
 
   ngOnInit(): void {
     this.available$ = this.scully.available$.pipe(
-      map((r) => r.filter((route) => route.route.startsWith('/blog')))
+      map((r) => r.filter((route) => route.route.startsWith('/blog'))),
+      map((r) =>
+        r.sort(
+          (a, b) =>
+            new Date(b.publishedAt).getTime() -
+            new Date(a.publishedAt).getTime()
+        )
+      )
     );
   }
 }
