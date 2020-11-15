@@ -26,9 +26,9 @@
     "@angular/router": "~11.0.0",
     "@scullyio/init": "~1.0.1",
     "@scullyio/ng-lib": "^1.0.0",
-    "@scullyio/scully": "^1.0.0",
-    "rxjs": "~6.6.0",
-    "tslib": "^2.0.0",
+    "@scullyio/scully": "^1.0.4",
+    "rxjs": "~6.6.3",
+    "tslib": "^2.0.3",
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
@@ -39,7 +39,7 @@
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.11.1",
-    "codelyzer": "^6.0.0",
+    "codelyzer": "^6.0.1",
     "jasmine-core": "~3.6.0",
     "jasmine-spec-reporter": "~5.0.0",
     "karma": "~5.1.1",
@@ -51,11 +51,11 @@
     "ngx-tailwind": "~0.5.1",
     "postcss-import": "12.0.1",
     "postcss-loader": "4.0.4",
-    "postcss-scss": "3.0.2",
+    "postcss-scss": "3.0.4",
     "protractor": "~7.0.0",
-    "tailwindcss": "1.9.5",
+    "tailwindcss": "1.9.6",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
-    "typescript": "~4.0.2"
+    "typescript": "~4.0.5"
   }
 }
