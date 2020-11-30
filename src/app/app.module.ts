@@ -6,15 +6,9 @@ import { AppComponent } from './app.component';
 import { ScullyLibModule } from '@scullyio/ng-lib';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    ScullyLibModule
-  ],
+  declarations: [AppComponent],
+  imports: [BrowserModule, AppRoutingModule, ScullyLibModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

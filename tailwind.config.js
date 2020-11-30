@@ -3,10 +3,10 @@ module.exports = {
     // removeDeprecatedGapUtilities: true,
     // purgeLayersByDefault: true,
   },
-  purge: ["./src/**/*.html", "./src/**/*.ts"],
+  purge: ['./src/**/*.html', './src/**/*.ts'],
   theme: {
     extend: {},
   },
   variants: {},
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [require('@tailwindcss/typography')],
 };
